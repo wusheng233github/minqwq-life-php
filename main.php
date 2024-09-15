@@ -9,16 +9,15 @@ echo "请选择选项...\n\n";
 echo "1:新的一生\n";
 echo "2:选择特定章节(不会做保存功能)\n";
 echo "3:睡觉(退出)\n";
-echo "4:重载游戏(开发)\n";
 while(true) {
 	echo "> ";
 	$input = trim(fgets(STDIN), "\n");
 	switch($input) {
 		case 1:
-			include "./chapter/1.1.php";
+			include __DIR__ . "/chapter/1.1.php";
 			break;
 		case 2:
-			$chapter = glob("./chapter/*.php");
+			$chapter = glob(__DIR__ . "/chapter/*.php");
 			echo "请选择章节...\n";
 			$keys = array_keys($chapter);
 			foreach($keys as $key) {
@@ -26,18 +25,15 @@ while(true) {
 				echo ($key + 1) . ": {$explode[0]}-{$explode[1]}\n";
 			}
 			echo "\n--> ";
-			$input = trim(fgets(STDIN), "\n");
-			if(isset($chapter[$input - 1])) {
-				include $chapter[$input - 1];
+			$input = fgets(STDIN);
+			if(isset($input[0]) && isset($chapter[$input[0] - 1])) {
+				include $chapter[$input[0] - 1];
 			} else {
 				echo "不存在\n";
 			}
 			break;
 		case 3:
 			echo $randomExitText[array_rand($randomExitText)] . "\n";
-			exit;
-		case 4:
-			include "./main.php";
 			exit;
 	}
 }
