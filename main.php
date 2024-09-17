@@ -11,26 +11,16 @@ echo "2:选择特定章节(不会做保存功能)\n";
 echo "3:睡觉(退出)\n";
 while(true) {
 	echo "> ";
-	$input = trim(fgets(STDIN), "\n");
+	$input = trim(fgets(STDIN));
 	switch($input) {
 		case 1:
 			include __DIR__ . "/chapter/1.1.php";
 			break;
 		case 2:
-			$chapter = glob(__DIR__ . "/chapter/*.php");
-			echo "请选择章节...\n";
-			$keys = array_keys($chapter);
-			foreach($keys as $key) {
-				$explode = explode(".", basename($chapter[$key]));
-				echo ($key + 1) . ": {$explode[0]}-{$explode[1]}\n";
-			}
-			echo "\n--> ";
-			$input = fgets(STDIN);
-			if(isset($input[0]) && isset($chapter[$input[0] - 1])) {
-				include $chapter[$input[0] - 1];
-			} else {
-				echo "不存在\n";
-			}
+			echo "请按此格式输入章节:大章/小章\n示例:1/2\n> ";
+			$input = str_replace("/", ".", trim(fgets(STDIN)));
+			// 这里有文件不存在问题但是python版也有所以我也移植过来了哈哈
+			include __DIR__ . "/chapter/$input.php";
 			break;
 		case 3:
 			echo $randomExitText[array_rand($randomExitText)] . "\n";
