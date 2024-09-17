@@ -1,0 +1,43 @@
+<?php
+// This chapter by MeltedIce and mixed by minqwq
+// wusheng233移植
+echo "没想好用什么音乐。\n";
+echo "幻想乡，山对面树林里某间屋子 | 2017-XX-XX\n";
+fgets(STDIN);
+echo "唔~起床了\n";
+fgets(STDIN);
+echo "今天是去新学校报道的第一天，我可不能迟到。\n";
+fgets(STDIN);
+echo "来到教室，这里熙熙攘攘的，坐满了新同学\n";
+fgets(STDIN);
+echo "我用着视线瞟着新同学们\n";
+fgets(STDIN);
+echo "突然，我的视线落在一个女孩身上\n";
+fgets(STDIN);
+echo "<???> ......\n";
+fgets(STDIN);
+echo "这不是昨天的那个女生吗？\n";
+fgets(STDIN);
+echo "<minqwq> ...hi?\n";
+fgets(STDIN);
+echo "我向她打了个招呼\n";
+fgets(STDIN);
+echo "<???> ....你好\n";
+fgets(STDIN);
+echo "她略带羞涩地回应了我\n";
+fgets(STDIN);
+echo "依然是这个甜美的声音\n";
+fgets(STDIN);
+echo "<minqwq> 我去，好巧啊，你也开始在这上学了？\n";
+fgets(STDIN);
+echo "<???> ...是。\n";
+fgets(STDIN);
+echo "<minqwq> 那，你叫什么\n";
+fgets(STDIN);
+echo "<Yukari> ...我...我的名字是Yukari...\n";
+fgets(STDIN);
+echo "她的脸染上了红晕，扭捏着\n";
+fgets(STDIN);
+echo "<minqwq> 很高兴认识你！我的名字是minqwq，平常直接叫我min就行。\n";
+fgets(STDIN);
+echo "\n";
