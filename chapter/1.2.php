@@ -147,3 +147,20 @@ echo "现在处于 Another View 状态\n";
 echo "<Safari> 又无聊了...\n";
 fgets(STDIN);
 echo "现在处于 Player View 状态\n";
+$r = 101;
+for($i = 1;$i <= 1000;$i++) {
+	usleep(10000);
+	$v = round($i / 1000 * 100);
+	if($v !== $r) {
+		echo $v . "%\n";
+		$r = $v;
+	}
+}
+echo "<minqwq> ...累死了。\n";
+fgets(STDIN);
+echo "<minqwq> 可算到家了\n";
+fgets(STDIN);
+echo "(飞上床)\n";
+fgets(STDIN);
+echo "<minqwq> (闭眼)\n";
+include __DIR__ . "/../chapter/1.3.php";
