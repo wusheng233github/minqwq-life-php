@@ -3,7 +3,7 @@ $randomExitText = ["<Yukari> 再见...希望我们还能再见。", "<Melted> �
 $reset = "\033[0m";
 $highlight = "\033[1m";
 $red = "\33[31m";
-echo "minqwq's life | minqwq 的一生 | (v0.1uncon) by minqwq 和他的几个朋友 |$highlight wusheng233非官方PHP版本$reset\n";
+echo "minqwq's life | minqwq 的一生 | (v0.2) by minqwq 和他的几个朋友 |$highlight wusheng233非官方PHP版本$reset\n";
 echo "[$red!$reset] 极早期开发阶段，不代表正式后效果。\n";
 echo "请选择选项...\n\n";
 echo "1:新的一生\n";
